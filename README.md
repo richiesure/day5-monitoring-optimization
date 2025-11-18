@@ -252,7 +252,7 @@ ECS Fargate (0 tasks)| $0.00      | Scaled to 0
 ECS Fargate (1 task) | $25.00     | If running 24/7
 CloudWatch           | $0.50      | Logs + metrics
 SNS                  | $0.00      | Free tier
-Total (scaled down)  | $0.90/mo   | ✅ Minimal cost
+Total (scaled down)  | $0.90/mo   |  Minimal cost
 Total (1 ECS task)   | $25.90/mo  | Production-like
 ```
 
@@ -289,17 +289,17 @@ aws cloudtrail start-logging --name devops-audit-trail
 
 ## Best Practices Implemented
 
-✅ **Observability**
+ **Observability**
 - Comprehensive dashboards
 - Multi-layer alerting
 - Centralized logging
 
-✅ **Cost Management**
+ **Cost Management**
 - Automated cost tracking
 - Budget alerts
 - Resource optimization
 
-✅ **Security**
+✅**Security**
 - Regular audits
 - Automated checks
 - Compliance monitoring
@@ -330,9 +330,6 @@ aws cloudtrail start-logging --name devops-audit-trail
 # Destroy monitoring infrastructure
 terraform destroy
 
-# Keep alarms if continuing Day 6
-```
-
 ## Production Enhancements
 
 For real production:
@@ -345,22 +342,6 @@ For real production:
 6. **Multi-Region Dashboards**: Global view
 7. **SLA Tracking**: Contractual commitments
 
-## Troubleshooting
-
-### Dashboard Not Showing Data
-- Check metric namespaces match
-- Verify resources exist in same region
-- Wait 5-10 minutes for metrics to populate
-
-### Alarms Stuck in INSUFFICIENT_DATA
-- Normal for new alarms (no data yet)
-- Wait for one evaluation period
-- Check metric is being published
-
-### Not Receiving Email Alerts
-- Confirm SNS subscription in email
-- Check spam folder
-- Verify email in terraform.tfvars
 
 ## Learning Objectives
 
@@ -373,11 +354,15 @@ For real production:
 ✅ Incident response planning
 ✅ SRE principles (SLIs, SLOs)
 
----
+<img width="1910" height="965" alt="image" src="https://github.com/user-attachments/assets/2ba68b26-7b71-44b5-8354-539fa1b6bce0" />
+<img width="1897" height="864" alt="image" src="https://github.com/user-attachments/assets/deb35cef-093f-4478-bd19-860401f37d4e" />
+<img width="1896" height="858" alt="image" src="https://github.com/user-attachments/assets/d14ab997-4f7b-446e-94e5-33569a7d0922" />
+<img width="1916" height="866" alt="image" src="https://github.com/user-attachments/assets/8d1b3394-f58e-4c13-92be-22be2d6dfc92" />
 
-**Author:** DevOps Learning Journey - Day 5
+
+
+
+
+**Author:** IAMEFEMENA (Richiesure)
 
 **Dashboard URL**: https://eu-west-2.console.aws.amazon.com/cloudwatch/home?region=eu-west-2#dashboards:name=DevOps-Infrastructure-Dashboard
-
-**Security Score**: 65/100 (Fair - improvements needed)
-**Monthly Cost**: ~$25-30 (optimized setup)
